@@ -26,7 +26,7 @@ endif
 build: $(SRCS)
 	go build -a -tags netgo -installsuffix netgo $(LDFLAGS) -o bin/$(NAME)
 
-install: build
+install:
 	\cp -r bin/$(NAME) $(DSTDIR)/
 	chown $(USER):$(GROUP) $(DSTDIR)/$(NAME)
 
