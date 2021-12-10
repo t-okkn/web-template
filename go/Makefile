@@ -18,7 +18,7 @@ run:
 
 init:
 ifeq ($(VER_JUDGE),1)
-	go mod init
+	go mod init $(NAME) && go mod tidy
 else
 	echo "Packageの取得は手動で行ってください"
 endif
