@@ -2,8 +2,11 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "commonjs",
+    "sourceMap": true,
     "outDir": "./dist",
+    "moduleResolution": "node",
     "esModuleInterop": true,
+    "importHelpers": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true
